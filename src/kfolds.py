@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt # para visualização de informações
 import pandas as pd
+from math import ceil
 
 def create_folds(df, k):
 
@@ -20,4 +21,30 @@ def create_folds(df, k):
         prop[i] * len(df)
 
 
+def create_folds_sk(X, y, k):
+
+    labels = sorted(set(y)) #Determina quantos grupos serão avaliados
+    sy = sorted(enumerate(y), key=lambda a : a[1])
+    quantity = []
+    offsets = []
+    folds = [[] for _ in range(k)]
+    position = 0
+    for label in labels: 
+        quantity.append(y.count(label))
+        offsets.append(position)
+        position += quantity[-1]
+    looping = True
+    counting = 0
+    fold_i = 0
+    while looping:
+        looping = False
+        for i in range(len(quantity)):
+            if counting < quantity[i]:
+                folds[fold_i].append(sy[counting + offsets[i]])
+                looping = True
+        counting += 1
+        fold_i = (fold_i + 1) % k     
+    return folds
+
     
+
