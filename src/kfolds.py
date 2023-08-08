@@ -40,7 +40,7 @@ def create_folds_sk(X, y, k):
         looping = False
         for i in range(len(quantity)):
             if counting < quantity[i]:
-                folds[fold_i].append(sy[counting + offsets[i]])
+                folds[fold_i].append(sy[counting + offsets[i]][0])
                 looping = True
         counting += 1
         fold_i = (fold_i + 1) % k     
