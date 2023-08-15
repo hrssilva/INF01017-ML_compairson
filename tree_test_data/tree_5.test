@@ -1,0 +1,97 @@
+Starting cross validation with 10 folds
+Iteration #0:
+	Confusion matrix =
+		[472, 28]
+		[14, 486]
+	accuracy = 0.958
+	recall = 0.972
+	precision = 0.9455252918287937
+	specificity = 0.944
+Iteration #1:
+	Confusion matrix =
+		[479, 21]
+		[13, 487]
+	accuracy = 0.966
+	recall = 0.974
+	precision = 0.9586614173228346
+	specificity = 0.958
+Iteration #2:
+	Confusion matrix =
+		[477, 23]
+		[16, 484]
+	accuracy = 0.961
+	recall = 0.968
+	precision = 0.9546351084812623
+	specificity = 0.954
+Iteration #3:
+	Confusion matrix =
+		[478, 22]
+		[13, 487]
+	accuracy = 0.965
+	recall = 0.974
+	precision = 0.9567779960707269
+	specificity = 0.956
+Iteration #4:
+	Confusion matrix =
+		[479, 21]
+		[12, 488]
+	accuracy = 0.967
+	recall = 0.976
+	precision = 0.9587426326129665
+	specificity = 0.958
+Iteration #5:
+	Confusion matrix =
+		[480, 20]
+		[19, 481]
+	accuracy = 0.961
+	recall = 0.962
+	precision = 0.9600798403193613
+	specificity = 0.96
+Iteration #6:
+	Confusion matrix =
+		[483, 17]
+		[19, 481]
+	accuracy = 0.964
+	recall = 0.962
+	precision = 0.9658634538152611
+	specificity = 0.966
+Iteration #7:
+	Confusion matrix =
+		[483, 17]
+		[20, 480]
+	accuracy = 0.963
+	recall = 0.96
+	precision = 0.96579476861167
+	specificity = 0.966
+Iteration #8:
+	Confusion matrix =
+		[477, 23]
+		[17, 483]
+	accuracy = 0.96
+	recall = 0.966
+	precision = 0.9545454545454546
+	specificity = 0.954
+Iteration #9:
+	Confusion matrix =
+		[472, 28]
+		[14, 486]
+	accuracy = 0.958
+	recall = 0.972
+	precision = 0.9455252918287937
+	specificity = 0.944
+Final score:
+	Accuracy:
+		mean = 0.9622999999999999
+		deviation = 0.003034798181098707
+	Recall:
+		mean = 0.9685999999999998
+		deviation = 0.005517245689653494
+	Precision:
+		mean = 0.9566151255437125
+		deviation = 0.006668692702406853
+	f1-measure:
+		mean = 0.9625401299334142
+		deviation = 0.002945729088156313
+	specificity:
+		mean = 0.9559999999999998
+		deviation = 0.007211102550927985

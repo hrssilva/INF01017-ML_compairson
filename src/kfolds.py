@@ -62,13 +62,14 @@ def cross_validate(classifier, X, y, k, log=False):
             'log' -> The logging degree of the validation ( 0 = no log, 1 = log results, 
             2 = log results and all iterations )
         Returns an array-like object containing the mean and standard deviation for every metric, 
-        in the form: [accuracy, recall, precision, f1-measure]
+        in the form: [accuracy, recall, precision, f1-measure, specificity]
     """
     folds = create_folds_sk(X, y, k)
     all_acc = []
     all_rec = []
     all_prec = []
     all_f1 = []
+    all_spec = []
     labels = set(y)
     if log > 0:
         print(f'Starting cross validation with {k} folds')
@@ -94,6 +95,7 @@ def cross_validate(classifier, X, y, k, log=False):
         recall = met.recall(cm)
         precision = met.precision(cm)
         f1measure = met.f1_measure(cm)
+        specificity = met.specificity(cm)
 
         if log > 1: 
             print(f'Iteration #{i}:')
@@ -102,16 +104,18 @@ def cross_validate(classifier, X, y, k, log=False):
             print(f'\taccuracy = {accuracy}')
             print(f'\trecall = {recall}')
             print(f'\tprecision = {precision}')
-            print(f'\tf1-measure = {f1measure}')
+            print(f'\tspecificity = {specificity}')
 
         all_acc.append(accuracy)
         all_rec.append(recall)
         all_prec.append(precision)
         all_f1.append(f1measure)
+        all_spec.append(specificity)
     score_acc = [average(all_acc), std(all_acc)]
     score_rec = [average(all_rec), std(all_rec)]
     score_prec = [average(all_prec), std(all_prec)]
     score_f1 = [average(all_f1), std(all_f1)]
+    score_spec = [average(all_spec), std(all_spec)]
     if log > 0:
         print('Final score:')
         print('\tAccuracy:')
@@ -130,7 +134,11 @@ def cross_validate(classifier, X, y, k, log=False):
         print(f'\t\tmean = {score_f1[0]}')
         print(f'\t\tdeviation = {score_f1[1]}')
 
-    return [score_acc, score_rec, score_prec, score_f1]
+        print('\tspecificity:')
+        print(f'\t\tmean = {score_spec[0]}')
+        print(f'\t\tdeviation = {score_spec[1]}')
+
+    return [score_acc, score_rec, score_prec, score_f1, score_spec]
 
 
     

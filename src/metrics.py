@@ -27,6 +27,10 @@ def precision(conf_matrix):
     tn, fp, fn, tp = ravel(conf_matrix)
     return 0 if tp == 0 else tp / (tp + fp)
 
+def specificity(conf_matrix):
+     tn, fp, fn, tp = ravel(conf_matrix)
+     return tn / (tn + fp)
+
 def recall(conf_matrix):
     tn, fp, fn, tp = ravel(conf_matrix)
     return  0 if tp == 0 else tp / (tp + fn)
