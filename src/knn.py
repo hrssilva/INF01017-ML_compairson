@@ -4,8 +4,6 @@ import kfolds as kf
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn import preprocessing
 
-#df = pd.read_csv("dataset/Phishing_Legitimate_full.csv")
-#kf.create_folds(df, 7)
 
 df = pd.read_csv("./dataset/Phishing_Legitimate_full.csv")
 
