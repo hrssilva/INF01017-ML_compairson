@@ -14,5 +14,5 @@ norm = preprocessing.normalize(x, axis=0, norm="max") # Normalizes by feature
 
 classifier = KNeighborsClassifier(int(argv[1]))
 
-kf.cross_validate(classifier, norm, list(y.values), 10, 2)
+kf.cross_validate(classifier, norm, list(y.values), 10, 1)
 

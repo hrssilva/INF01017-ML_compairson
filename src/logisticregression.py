@@ -16,4 +16,4 @@ norm = preprocessing.normalize(X, axis=0, norm="max") # Normalizes by feature
 
 classifier = LogisticRegression(max_iter=200, C=float(argv[2]), solver=argv[1])
 
-kf.cross_validate(classifier, norm, list(y.values), 10, 2)
+kf.cross_validate(classifier, norm, list(y.values), 10, 1)

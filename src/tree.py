@@ -14,7 +14,7 @@ classifier = tree.DecisionTreeClassifier(max_depth=depth)
 classifier.fit(x,y)
 
 
-kf.cross_validate(classifier, list(x.values), list(y.values), 10, 2)
+kf.cross_validate(classifier, list(x.values), list(y.values), 10, 1)
 plt.figure()
 tree.plot_tree(classifier)
 plt.savefig('./tree_test_data/tree_depth_' + str(depth) + '.pdf',format="pdf",bbox_inches = "tight")
