@@ -1,26 +1,6 @@
-import matplotlib.pyplot as plt # para visualização de informações
-import pandas as pd
-from math import ceil
+from time import time
 from numpy import average, std
 import metrics as met
-
-def create_folds(df, k):
-
-    labels = df["CLASS_LABEL"].unique() #Determina quantos grupos serão avaliados
-    grouped = df.groupby(df["CLASS_LABEL"]) #Separa os grupos em presentes em "CLASS_LABEL"
-    df_grouped_rand = [None] * len(labels)
-    prop = [None] * len(labels)
-
-    for i in range(len(labels)):
-        df_grouped_rand[i] = grouped.get_group(labels[i]).sample(frac = 1)
-        prop[i] = len(df_grouped_rand[i])/len(df)
-
-    elements_in_fold = int(len(df)/k)
-   
-    fold =[[0 for x in range(k)] for y in range(elements_in_fold)]
-    print(fold)
-    for i in range(0 , len(labels)): # TODO FINISH KFOLD 
-        prop[i] * len(df)
 
 
 def create_folds_sk(X, y, k):
@@ -73,6 +53,7 @@ def cross_validate(classifier, X, y, k, log=False):
     labels = set(y)
     if log > 0:
         print(f'Starting cross validation with {k} folds')
+    start = time()
     for i in range(k):
         train_x = []
         test_x = []
@@ -111,6 +92,7 @@ def cross_validate(classifier, X, y, k, log=False):
         all_prec.append(precision)
         all_f1.append(f1measure)
         all_spec.append(specificity)
+    end = time()
     score_acc = [average(all_acc), std(all_acc)]
     score_rec = [average(all_rec), std(all_rec)]
     score_prec = [average(all_prec), std(all_prec)]
@@ -118,6 +100,8 @@ def cross_validate(classifier, X, y, k, log=False):
     score_spec = [average(all_spec), std(all_spec)]
     if log > 0:
         print('Final score:')
+        print(f'\tCross validation elapsed time (seconds):')
+        print(f'\t\ttime = {end - start}')
         print('\tAccuracy:')
         print(f'\t\tmean = {score_acc[0]}')
         print(f'\t\tdeviation = {score_acc[1]}')

@@ -1,12 +1,12 @@
 Starting cross validation with 10 folds
 Iteration #0:
 	Confusion matrix =
-		[477, 23]
+		[475, 25]
 		[14, 486]
-	accuracy = 0.963
+	accuracy = 0.961
 	recall = 0.972
-	precision = 0.9548133595284872
-	specificity = 0.954
+	precision = 0.9510763209393346
+	specificity = 0.95
 Iteration #1:
 	Confusion matrix =
 		[483, 17]
@@ -26,10 +26,10 @@ Iteration #2:
 Iteration #3:
 	Confusion matrix =
 		[478, 22]
-		[16, 484]
-	accuracy = 0.962
-	recall = 0.968
-	precision = 0.9565217391304348
+		[15, 485]
+	accuracy = 0.963
+	recall = 0.97
+	precision = 0.9566074950690335
 	specificity = 0.956
 Iteration #4:
 	Confusion matrix =
@@ -49,12 +49,12 @@ Iteration #5:
 	specificity = 0.972
 Iteration #6:
 	Confusion matrix =
-		[488, 12]
+		[489, 11]
 		[20, 480]
-	accuracy = 0.968
+	accuracy = 0.969
 	recall = 0.96
-	precision = 0.975609756097561
-	specificity = 0.976
+	precision = 0.9775967413441955
+	specificity = 0.978
 Iteration #7:
 	Confusion matrix =
 		[483, 17]
@@ -80,18 +80,20 @@ Iteration #9:
 	precision = 0.949119373776908
 	specificity = 0.948
 Final score:
+	Cross validation elapsed time (seconds):
+		time = 0.3970799446105957
 	Accuracy:
-		mean = 0.9634999999999998
-		deviation = 0.004477722635447626
+		mean = 0.9635
+		deviation = 0.004631414470763769
 	Recall:
-		mean = 0.9650000000000001
-		deviation = 0.009219544457292894
+		mean = 0.9652000000000001
+		deviation = 0.009303762679690413
 	Precision:
-		mean = 0.9622220498682206
-		deviation = 0.008245678803230978
+		mean = 0.9620556201278285
+		deviation = 0.008973036968974663
 	f1-measure:
-		mean = 0.9635502136827101
-		deviation = 0.0045124014510268705
+		mean = 0.9635603529594532
+		deviation = 0.004642863811864311
 	specificity:
-		mean = 0.9620000000000001
-		deviation = 0.008763560920082666
+		mean = 0.9618
+		deviation = 0.009526804291051651

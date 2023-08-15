@@ -9,89 +9,91 @@ Iteration #0:
 	specificity = 0.958
 Iteration #1:
 	Confusion matrix =
-		[484, 16]
+		[485, 15]
 		[7, 493]
-	accuracy = 0.977
+	accuracy = 0.978
 	recall = 0.986
-	precision = 0.9685658153241651
-	specificity = 0.968
+	precision = 0.9704724409448819
+	specificity = 0.97
 Iteration #2:
 	Confusion matrix =
-		[476, 24]
+		[477, 23]
 		[12, 488]
-	accuracy = 0.964
+	accuracy = 0.965
 	recall = 0.976
-	precision = 0.953125
-	specificity = 0.952
+	precision = 0.9549902152641878
+	specificity = 0.954
 Iteration #3:
 	Confusion matrix =
-		[474, 26]
-		[13, 487]
-	accuracy = 0.961
-	recall = 0.974
-	precision = 0.949317738791423
-	specificity = 0.948
+		[473, 27]
+		[11, 489]
+	accuracy = 0.962
+	recall = 0.978
+	precision = 0.9476744186046512
+	specificity = 0.946
 Iteration #4:
 	Confusion matrix =
-		[483, 17]
+		[486, 14]
 		[10, 490]
-	accuracy = 0.973
+	accuracy = 0.976
 	recall = 0.98
-	precision = 0.9664694280078896
-	specificity = 0.966
+	precision = 0.9722222222222222
+	specificity = 0.972
 Iteration #5:
 	Confusion matrix =
 		[485, 15]
-		[17, 483]
-	accuracy = 0.968
-	recall = 0.966
-	precision = 0.9698795180722891
+		[18, 482]
+	accuracy = 0.967
+	recall = 0.964
+	precision = 0.9698189134808853
 	specificity = 0.97
 Iteration #6:
 	Confusion matrix =
 		[487, 13]
-		[15, 485]
-	accuracy = 0.972
-	recall = 0.97
-	precision = 0.9738955823293173
+		[14, 486]
+	accuracy = 0.973
+	recall = 0.972
+	precision = 0.9739478957915831
 	specificity = 0.974
 Iteration #7:
 	Confusion matrix =
-		[483, 17]
+		[482, 18]
 		[13, 487]
-	accuracy = 0.97
+	accuracy = 0.969
 	recall = 0.974
-	precision = 0.9662698412698413
-	specificity = 0.966
+	precision = 0.9643564356435643
+	specificity = 0.964
 Iteration #8:
 	Confusion matrix =
-		[483, 17]
-		[12, 488]
-	accuracy = 0.971
-	recall = 0.976
-	precision = 0.9663366336633663
-	specificity = 0.966
+		[482, 18]
+		[13, 487]
+	accuracy = 0.969
+	recall = 0.974
+	precision = 0.9643564356435643
+	specificity = 0.964
 Iteration #9:
 	Confusion matrix =
-		[482, 18]
+		[481, 19]
 		[14, 486]
-	accuracy = 0.968
+	accuracy = 0.967
 	recall = 0.972
-	precision = 0.9642857142857143
-	specificity = 0.964
+	precision = 0.9623762376237623
+	specificity = 0.962
 Final score:
+	Cross validation elapsed time (seconds):
+		time = 0.5438010692596436
 	Accuracy:
-		mean = 0.9690999999999999
-		deviation = 0.00434626276242015
+		mean = 0.9692999999999999
+		deviation = 0.0047127486671792755
 	Recall:
-		mean = 0.9749999999999999
-		deviation = 0.005157518783291056
+		mean = 0.9751999999999998
+		deviation = 0.005455272678794347
 	Precision:
-		mean = 0.9636887904356971
-		deviation = 0.007284473300721927
+		mean = 0.963895784783227
+		deviation = 0.007876805471987441
 	f1-measure:
-		mean = 0.9692885611788451
-		deviation = 0.004248590932398682
+		mean = 0.9694890119717104
+		deviation = 0.004612234916490194
 	specificity:
-		mean = 0.9632
-		deviation = 0.007704544113703295
+		mean = 0.9634
+		deviation = 0.008345058418010034
