@@ -1,5 +1,5 @@
 #from pandas import DataFrame
-
+from numpy import ravel
 def confusion_matrix(y_true, y_pred, labels=None):
     if not labels:
         labels = sorted(set(y_pred).union(set(y_true)))
@@ -9,8 +9,6 @@ def confusion_matrix(y_true, y_pred, labels=None):
     for label in labels:
         lookup_d[label] = lookup_c
         lookup_c += 1
-    print(lookup_d)
-    print(matrix)
     for i in range(len(y_pred)):
         matrix[lookup_d[y_true[i]]][lookup_d[y_pred[i]]] +=1
     return matrix
@@ -26,13 +24,13 @@ def accuracy(conf_matrix):
     return accurate / total
 
 def precision(conf_matrix):
-    tn, fp, fn, tp = conf_matrix.ravel()
-    return tp / tp + fp
+    tn, fp, fn, tp = ravel(conf_matrix)
+    return 0 if tp == 0 else tp / (tp + fp)
 
 def recall(conf_matrix):
-    tn, fp, fn, tp = conf_matrix.ravel()
-    return tp / tp + fn
+    tn, fp, fn, tp = ravel(conf_matrix)
+    return  0 if tp == 0 else tp / (tp + fn)
 
 def f1_measure(conf_matrix):
-    tn, fp, fn, tp = conf_matrix.ravel()
+    tn, fp, fn, tp = ravel(conf_matrix)
     return 2*tp / ( 2*tp + fp + fn )
