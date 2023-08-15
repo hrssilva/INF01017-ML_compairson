@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt # para visualização de informações
 from sys import argv
 import pandas as pd
 import kfolds as kf

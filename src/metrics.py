@@ -1,4 +1,3 @@
-#from pandas import DataFrame
 from numpy import ravel
 def confusion_matrix(y_true, y_pred, labels=None):
     if not labels:
