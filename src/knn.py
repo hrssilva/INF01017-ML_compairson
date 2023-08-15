@@ -14,5 +14,6 @@ norm = preprocessing.normalize(x, axis=0, norm="max") # Normalizes by feature
 
 classifier = KNeighborsClassifier(int(argv[1]))
 
-kf.cross_validate(classifier, norm, list(y.values), 10, 1)
+with open('knn_test_data/knn_scores.log', 'a+') as log_file:
+    log_file.write(argv[1] + ', ' + str(kf.cross_validate(classifier, norm, list(y.values), 10, 1)).replace('[', '').replace(']', '') + '\n')
 

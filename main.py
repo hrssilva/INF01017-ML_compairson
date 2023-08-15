@@ -10,7 +10,8 @@
     logistic regression -> varies de solver and the inverse of regularization strength
 """
 from subprocess import run
-
+with open('knn_test_data/knn_scores.log', 'w'), open('regression_test_data/regression_scores.log', 'w'), open('tree_test_data/tree_scores.log', 'w'):
+       print('Created score files')
 for i in range(1, 18, 2):
     with open(f'knn_test_data/knn_{i}.test', 'w') as file:
         run(['python', 'src/knn.py', str(i)], stdout=file)

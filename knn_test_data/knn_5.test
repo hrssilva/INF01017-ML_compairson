@@ -1,7 +1,7 @@
 Starting cross validation with 10 folds
 Final score:
 	Cross validation elapsed time (seconds):
-		time = 0.4952726364135742
+		time = 0.5004172325134277
 	Accuracy:
 		mean = 0.9458
 		deviation = 0.004621688003316541
