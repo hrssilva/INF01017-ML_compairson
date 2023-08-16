@@ -1,19 +1,19 @@
 Starting cross validation with 10 folds
 Final score:
 	Cross validation elapsed time (seconds):
-		time = 0.6935148239135742
+		time = 0.6906225681304932
 	Accuracy:
-		mean = 0.9696
-		deviation = 0.00402988833592198
+		mean = 0.9689
+		deviation = 0.004678675026115839
 	Recall:
-		mean = 0.9745999999999999
-		deviation = 0.006636264009214829
+		mean = 0.9736
+		deviation = 0.007144228439796708
 	Precision:
-		mean = 0.964987711784963
-		deviation = 0.005583656137330803
+		mean = 0.9645919413509423
+		deviation = 0.007036497121436763
 	f1-measure:
-		mean = 0.9697481854856903
-		deviation = 0.004037860000819787
+		mean = 0.9690454196047081
+		deviation = 0.004655304243019648
 	specificity:
-		mean = 0.9645999999999999
-		deviation = 0.005868560300448489
+		mean = 0.9642
+		deviation = 0.007400000000000007
