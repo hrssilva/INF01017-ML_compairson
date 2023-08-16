@@ -27,21 +27,3 @@ for i in range(6):
     with open(f'regression_test_data/regression_liblinear_{i}.test', 'w') as file:
         run(['python', 'src/logisticregression.py', 'liblinear', str(lr)], stdout=file)
 
-
-with open(f'regression_test_data/regression_lbfgs_10.test', 'w') as file:
-        run(['python', 'src/logisticregression.py', 'lbfgs', '1.0'], stdout=file)
-with open(f'regression_test_data/regression_lbfgs_05.test', 'w') as file:
-        run(['python', 'src/logisticregression.py', 'lbfgs', '0.5'], stdout=file)
-with open(f'regression_test_data/regression_lbfgs_01.test', 'w') as file:
-        run(['python', 'src/logisticregression.py', 'lbfgs', '0.1'], stdout=file)
-with open(f'regression_test_data/regression_lbfgs_09.test', 'w') as file:
-        run(['python', 'src/logisticregression.py', 'lbfgs', '0.9'], stdout=file)
-
-with open(f'regression_test_data/regression_liblinear_10.test', 'w') as file:
-        run(['python', 'src/logisticregression.py', 'liblinear', '1.0'], stdout=file)
-with open(f'regression_test_data/regression_liblinear_05.test', 'w') as file:
-        run(['python', 'src/logisticregression.py', 'liblinear', '0.5'], stdout=file)
-with open(f'regression_test_data/regression_liblinear_01.test', 'w') as file:
-        run(['python', 'src/logisticregression.py', 'liblinear', '0.1'], stdout=file)
-with open(f'regression_test_data/regression_liblinear_09.test', 'w') as file:
-        run(['python', 'src/logisticregression.py', 'liblinear', '0.9'], stdout=file)
