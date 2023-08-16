@@ -14,7 +14,8 @@ legend("topright", legend = l,
 
 dev.off()
 
+pdf("./graphs/selected_box.pdf")
 boxbest <- read.csv("box.csv",header = FALSE)
 boxplot(boxbest,xlab="Model",xaxt='n',ylab="Score",ylim=c(0.92,1), main="Box Plot Precision",col="azure3")
 axis(1, at=1:3, labels=c("KNN - 1","BDT Depth - 12", "Alpha - 0.0001"))
-
+dev.off()
