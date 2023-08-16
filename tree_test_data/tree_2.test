@@ -1,7 +1,87 @@
 Starting cross validation with 10 folds
+Iteration #0:
+	Confusion matrix =
+		[441, 59]
+		[24, 476]
+	accuracy = 0.917
+	recall = 0.952
+	precision = 0.8897196261682243
+	specificity = 0.882
+Iteration #1:
+	Confusion matrix =
+		[459, 41]
+		[26, 474]
+	accuracy = 0.933
+	recall = 0.948
+	precision = 0.920388349514563
+	specificity = 0.918
+Iteration #2:
+	Confusion matrix =
+		[440, 60]
+		[28, 472]
+	accuracy = 0.912
+	recall = 0.944
+	precision = 0.8872180451127819
+	specificity = 0.88
+Iteration #3:
+	Confusion matrix =
+		[457, 43]
+		[32, 468]
+	accuracy = 0.925
+	recall = 0.936
+	precision = 0.9158512720156555
+	specificity = 0.914
+Iteration #4:
+	Confusion matrix =
+		[450, 50]
+		[19, 481]
+	accuracy = 0.931
+	recall = 0.962
+	precision = 0.9058380414312618
+	specificity = 0.9
+Iteration #5:
+	Confusion matrix =
+		[444, 56]
+		[31, 469]
+	accuracy = 0.913
+	recall = 0.938
+	precision = 0.8933333333333333
+	specificity = 0.888
+Iteration #6:
+	Confusion matrix =
+		[447, 53]
+		[25, 475]
+	accuracy = 0.922
+	recall = 0.95
+	precision = 0.8996212121212122
+	specificity = 0.894
+Iteration #7:
+	Confusion matrix =
+		[443, 57]
+		[29, 471]
+	accuracy = 0.914
+	recall = 0.942
+	precision = 0.8920454545454546
+	specificity = 0.886
+Iteration #8:
+	Confusion matrix =
+		[451, 49]
+		[25, 475]
+	accuracy = 0.926
+	recall = 0.95
+	precision = 0.9064885496183206
+	specificity = 0.902
+Iteration #9:
+	Confusion matrix =
+		[442, 58]
+		[30, 470]
+	accuracy = 0.912
+	recall = 0.94
+	precision = 0.8901515151515151
+	specificity = 0.884
 Final score:
 	Cross validation elapsed time (seconds):
-		time = 0.17564797401428223
+		time = 0.22931551933288574
 	Accuracy:
 		mean = 0.9205000000000002
 		deviation = 0.007579577824654887

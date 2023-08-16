@@ -1,19 +1,99 @@
 Starting cross validation with 10 folds
+Iteration #0:
+	Confusion matrix =
+		[481, 19]
+		[9, 491]
+	accuracy = 0.972
+	recall = 0.982
+	precision = 0.9627450980392157
+	specificity = 0.962
+Iteration #1:
+	Confusion matrix =
+		[476, 24]
+		[8, 492]
+	accuracy = 0.968
+	recall = 0.984
+	precision = 0.9534883720930233
+	specificity = 0.952
+Iteration #2:
+	Confusion matrix =
+		[478, 22]
+		[15, 485]
+	accuracy = 0.963
+	recall = 0.97
+	precision = 0.9566074950690335
+	specificity = 0.956
+Iteration #3:
+	Confusion matrix =
+		[478, 22]
+		[14, 486]
+	accuracy = 0.964
+	recall = 0.972
+	precision = 0.9566929133858267
+	specificity = 0.956
+Iteration #4:
+	Confusion matrix =
+		[491, 9]
+		[17, 483]
+	accuracy = 0.974
+	recall = 0.966
+	precision = 0.9817073170731707
+	specificity = 0.982
+Iteration #5:
+	Confusion matrix =
+		[484, 16]
+		[19, 481]
+	accuracy = 0.965
+	recall = 0.962
+	precision = 0.9678068410462777
+	specificity = 0.968
+Iteration #6:
+	Confusion matrix =
+		[485, 15]
+		[12, 488]
+	accuracy = 0.973
+	recall = 0.976
+	precision = 0.9701789264413518
+	specificity = 0.97
+Iteration #7:
+	Confusion matrix =
+		[483, 17]
+		[11, 489]
+	accuracy = 0.972
+	recall = 0.978
+	precision = 0.9664031620553359
+	specificity = 0.966
+Iteration #8:
+	Confusion matrix =
+		[484, 16]
+		[12, 488]
+	accuracy = 0.972
+	recall = 0.976
+	precision = 0.9682539682539683
+	specificity = 0.968
+Iteration #9:
+	Confusion matrix =
+		[481, 19]
+		[10, 490]
+	accuracy = 0.971
+	recall = 0.98
+	precision = 0.962671905697446
+	specificity = 0.962
 Final score:
 	Cross validation elapsed time (seconds):
-		time = 0.7192325592041016
+		time = 0.9225049018859863
 	Accuracy:
-		mean = 0.9695
-		deviation = 0.004544227107000709
+		mean = 0.9693999999999999
+		deviation = 0.0038522720568516474
 	Recall:
-		mean = 0.975
-		deviation = 0.006942621983083919
+		mean = 0.9745999999999999
+		deviation = 0.006696267617113288
 	Precision:
-		mean = 0.9644651639709199
-		deviation = 0.007646271993332082
+		mean = 0.964655599915465
+		deviation = 0.007795313646873012
 	f1-measure:
-		mean = 0.9696698386738068
-		deviation = 0.004515213380078321
+		mean = 0.9695627066727981
+		deviation = 0.003798562802913113
 	specificity:
-		mean = 0.9639999999999999
-		deviation = 0.00804984471899925
+		mean = 0.9642
+		deviation = 0.008219489035213814
