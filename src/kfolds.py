@@ -1,6 +1,7 @@
 from time import time
 from numpy import average, std
 import metrics as met
+from sklearn import preprocessing
 
 
 def create_folds_sk(X, y, k):
@@ -28,7 +29,7 @@ def create_folds_sk(X, y, k):
         fold_i = (fold_i + 1) % k     
     return folds
 
-def cross_validate(classifier, X, y, k, log=False):
+def cross_validate(classifier, X, y, k, normalize=False, log=False):
     """
         Apply k-fold cross validation to classifier, using data X and target y
             'classifier' -> The classifier to validate
@@ -38,7 +39,9 @@ def cross_validate(classifier, X, y, k, log=False):
             'y' -> The target column to fit and score the data
 
             'k' -> The number of folds to be used during validation
-
+            
+            'normalize' -> If the data should be normalized
+            
             'log' -> The logging degree of the validation ( 0 = no log, 1 = log results, 
             2 = log results and all iterations )
         Returns an array-like object containing the mean and standard deviation for every metric, 
@@ -68,7 +71,9 @@ def cross_validate(classifier, X, y, k, log=False):
                 for p in folds[j]:
                     train_x.append(X[p])
                     train_y.append(y[p])
-        
+        if normalize:
+            test_x = preprocessing.normalize(test_x, axis=0, norm="max") # Normalizes test
+            train_x = preprocessing.normalize(train_x, axis=0, norm="max") # Normalizes test
         classifier.fit(train_x, train_y)
         pred = classifier.predict(test_x)
         cm = met.confusion_matrix(test_y, pred, labels)
