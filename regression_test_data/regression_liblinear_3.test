@@ -81,7 +81,7 @@ Iteration #9:
 	specificity = 0.838
 Final score:
 	Cross validation elapsed time (seconds):
-		time = 0.48604702949523926
+		time = 0.5899343490600586
 	Accuracy:
 		mean = 0.9282000000000001
 		deviation = 0.012599999999999988

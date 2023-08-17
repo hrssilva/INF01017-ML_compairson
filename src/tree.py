@@ -10,7 +10,7 @@ df = pd.read_csv("./dataset/Phishing_Legitimate_full.csv")
 y = df['CLASS_LABEL']
 x = df.drop(['id','CLASS_LABEL'],axis=1) # Drops Id label
 
-classifier = tree.DecisionTreeClassifier(max_depth=depth)
+classifier = tree.DecisionTreeClassifier(max_depth=depth, random_state=42)
 classifier.fit(x,y)
 
 with open('tree_test_data/tree_scores.log', 'a+') as log_file:
