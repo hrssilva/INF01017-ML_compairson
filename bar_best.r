@@ -7,7 +7,7 @@ pdf("./graphs/selected_bar.pdf")
 l <- c("Accuracy","Recall","Precision","F1-Measure","Specificity")
 
 barplot(mat, main ="Overall Best Scores",col = c("aquamarine2","azure3","coral2","orchid3","black"),
-        beside = TRUE, ylim =c(0.88,0.98), ylab = "Score", xlab = "Model",xpd=FALSE,border="white")
+        beside = TRUE, ylim =c(0.88,0.98), ylab = "Mean Score", xlab = "Model",xpd=FALSE,border="white")
 legend("topright", legend = l, 
        fill = c("aquamarine2","azure3","coral2","orchid3","black"), box.lty = 0.5, cex = 1,
 )
