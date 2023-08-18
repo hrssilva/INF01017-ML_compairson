@@ -2,7 +2,6 @@ from sys import argv
 import pandas as pd
 import kfolds as kf
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn import preprocessing
 
 
 df = pd.read_csv("./dataset/Phishing_Legitimate_full.csv")

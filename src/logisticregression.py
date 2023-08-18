@@ -2,7 +2,6 @@ import pandas as pd
 from sys import argv
 import kfolds as kf
 from sklearn.linear_model import LogisticRegression
-from sklearn import preprocessing
 
 df = pd.read_csv("./dataset/Phishing_Legitimate_full.csv")
 
